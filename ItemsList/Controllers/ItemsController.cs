@@ -10,5 +10,10 @@ namespace ItemsList.Controllers
             var item = new Item() { Name = "bat" };
             return View(item);
         }
+
+        public IActionResult Edit(int id)
+        {
+            return Content("id = " + id);
+        }
     }
 }
